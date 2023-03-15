@@ -9,6 +9,7 @@
 import UIKit
 
 
+/// Controller to house tabs
 final class RMTabBarController: UITabBarController {
 
     
@@ -18,6 +19,7 @@ final class RMTabBarController: UITabBarController {
     }
     
     
+    /// Tab configurations
     private func setUpTabs() {
         // Controllers
         let characterVC = UINavigationController(rootViewController: RMCharactersViewController())
