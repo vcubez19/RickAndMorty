@@ -12,10 +12,10 @@ import Foundation
 struct Character: Codable {
     let id: Int
     let name: String
-    let status: Status
+    let status: Status.RawValue
     let species: String
     let type: String
-    let gender: Gender
+    let gender: Gender.RawValue
     let origin: Origin
     let location: SingleLocation
     let image: String
@@ -40,5 +40,4 @@ enum Gender: String, Codable {
     case genderless = "Genderless"
     case `unknown` = "Unknown"
 }
-
 
